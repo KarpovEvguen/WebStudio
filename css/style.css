@@ -132,16 +132,16 @@ letter-spacing: 0.28px;
     margin-bottom: 30px;
  }
  .features-list-item:nth-child(1)::before{
-    background-image: url('../images/antenna.svg');
+    background-image: url('../symboldefts.svg/antenna.svg');
  }
  .features-list-item:nth-child(2)::before{
-    background-image: url('../images/clock.svg');
+    background-image: url('../symboldefts.svg/clock.svg');
  }
  .features-list-item:nth-child(3)::before{
-    background-image: url('../images/diagram.svg');
+    background-image: url('../symboldefts.svg/diagram.svg');
  }
  .features-list-item:nth-child(4)::before{
-    background-image: url('../images/astronaut.svg');
+    background-image: url('../symboldefts.svg/astronaut.svg');
  }
 .features-list-title{ 
     font-size: 14px;
