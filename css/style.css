@@ -52,6 +52,14 @@ ul,p,h1,h2,h3,button{
     display: flex;
     gap: 50px;
 }
+.envelope-svg .telephone-svg{
+    fill: var(--text);
+    width: 16px;
+    height: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
 .logo{ 
     font-size: 26px; 
 font-family: "Raleway", sans-serif; 
@@ -87,6 +95,35 @@ letter-spacing: 0.28px;
     background-position: center;
  
 } 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: skyblue;
+    transform: translate(-50%, -50%);
+}
 .hero_title{ 
     max-width: 696px;
     font-weight: 900; 
@@ -132,16 +169,16 @@ letter-spacing: 0.28px;
     margin-bottom: 30px;
  }
  .features-list-item:nth-child(1)::before{
-    background-image: url('../symboldefts.svg/antenna.svg');
+    background-image: url('../images/antenna.svg');
  }
  .features-list-item:nth-child(2)::before{
-    background-image: url('../symboldefts.svg/clock.svg');
+    background-image: url('../images/clock.svg');
  }
  .features-list-item:nth-child(3)::before{
-    background-image: url('../symboldefts.svg/diagram.svg');
+    background-image: url('../images/diagram.svg');
  }
  .features-list-item:nth-child(4)::before{
-    background-image: url('../symboldefts.svg/astronaut.svg');
+    background-image: url('../images/astronaut.svg');
  }
 .features-list-title{ 
     font-size: 14px;
@@ -221,6 +258,36 @@ font-size: 16px;
 font-weight: 400; 
 letter-spacing: 0.48px; 
 } 
+.company_title{
+    padding: 87px 0 60px;
+    color: var(--black);
+    width: 300px;
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.03em;
+text-align: center;
+}
+.company-list_title{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    fill: #afb1b8;
+}
+.company-list_title:hover{
+    fill: #2196F3;
+}
+.company-svg{
+    border: #afb1b8 2px solid;
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+}
+.company-list_use{
+    width: 106px;
+    height: 60px;
+
+}
 
 .footer{ 
     padding: 60px 0;

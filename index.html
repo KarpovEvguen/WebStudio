@@ -33,8 +33,16 @@
                 </ul>
             </nav>
             <div class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-title">
+                        <svg class="envelope-svg"> <use class="envelope-list_use" width="16" height="12"  href="./images/symboldefs.svg#envelope"/></svg>
             <a href="mailto:info@devstudio.com" class="header-link_number">info@devstudio.com</a>
+        </li>
+        <li class="contacts-title">
+            <svg class="telephone-svg"> <use class="telephone-list_use" width="16" height="12"  href="./images/symboldefs.svg#smartphone"/></svg>
             <a href="tel:+38 096 111 11 11" class="header-link_number">+38 096 111 11 11</a>
+        </li>
+        </ul>
         </div>
         </div>
     </header>
@@ -42,7 +50,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero_title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="hero-button">Замовити послугу</button>
+                <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
             </div>
         </section>
         <section class="features">
@@ -65,8 +73,7 @@
                     </li>
                     <li class="features-list-item">
                         <h2 class="features-list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-                        <p class="features-list-description">Значимість цих проблем настільки очевидна, що реалізація планових
-                            завдань.</p>
+                        <p class="features-list-description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                     </li>
                 </ul>
             </div>
@@ -114,6 +121,31 @@
                 </ul>
             </div>
         </section>
+        <section class="company">
+            <div class="container">
+                <h3 class="company_title">Постійні клієнти</h3>
+                <ul class="company_list">
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#company1"/></svg>
+                    </li>
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#company2"/></svg>
+                    </li>
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#company3"/></svg>
+                    </li>
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#company4"/></svg>
+                    </li>
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#company5"/></svg>
+                    </li>
+                    <li class="company-list_title">
+                        <svg class="company-svg"> <use class="company-list_use" width="106" height="60"  href="./images/symboldefs.svg#group6"/></svg>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">
@@ -126,6 +158,13 @@
             </address>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>Закрити</button>
+            <p>....</p>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
