@@ -71,7 +71,6 @@ letter-spacing: 0.78px;
     display: flex;
     gap: 50px;
     align-items: center;
-    outline: #2196F3 1px dotted;
 }
 .contacts-item{
     color: #757575;
