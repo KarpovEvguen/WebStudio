@@ -18,8 +18,8 @@
 <body>
     <header class="header">
         <div class="container">
-            <a href="./index.html" class="logo">Web<span class="black-logo">Studio</span></a>
             <nav class="nav">
+                            <a href="./index.html" class="logo">Web<span class="black-logo">Studio</span></a>
                 <ul class="header-list">
                     <li class="header-item">
                         <a href="./index.html" class="header-link">Студія</a>
@@ -44,7 +44,7 @@
         <li class="contacts-item">
             <a href="tel:+38 096 111 11 11" class="header-link_number">
             <svg width="10" height="16">
-                 <use   href="./images/symboldefs.svg#smartphone"></use>
+                 <use href="./images/symboldefs.svg#smartphone"></use>
             </svg>
             +38 096 111 11 11</a>
         </li>
@@ -89,12 +89,15 @@
                 <ul class="work_list">
                     <li class="work_item">
                         <img src="./images/img1.jpg" alt="desktop">
+                        <p class="work-text">ДЕСКТОПНІ ДОДАТКИ</p>
                     </li>
                     <li class="work_item">
                         <img src="./images/img2.jpg" alt="mobile">
+                        <p class="work-text">МОБІЛЬНІ ДОДАТКИ</p>
                     </li>
                     <li class="work_item">
                         <img src="./images/img3.jpg" alt="tablet">
+                        <p class="work-text">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
                     </li>
                 </ul>
             </div>
@@ -272,15 +275,16 @@
 
     <footer class="footer">
         <div class="container">
+            <div class=".footer-content-item">
             <a href="./index.html" class="footer-logo">Web<span class="footer-white">Studio</span></a>
             <address class="address">
                 <p class="footer-link">м. Київ, пр-т Лесі Українки, 26</p>
                 <a href="mailto:info@devstudio.com" class="footer-info">info@devstudio.com</a>
                 <a href="tel:+38 096 111 11 11" class="footer-info">+38 096 111 11 11</a>
             </address>
-        
-        <div class="footer-social-box">
-            <p class="footer-social-title">Приєднюйтесь</p>
+            </div>
+        <div class="footer-social-box"> 
+            <h3 class="footer-social-title">Приєднюйтесь</h3>
             <ul class="social-list">
                 <li class="social-item">
                     <a href="#" class="social-link">
@@ -315,10 +319,60 @@
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
+        <form class="modal-btn_close" data-modal-close>
+            <a href="#" class="modal-close_link">
+                <svg width="11" height="11">
+                    <use href="./images/symboldefs.svg#close"></use>
+                </svg>
+            </a>
+        </form>
         <div class="modal">
-            <button class="btn" data-modal-close>Закрити</button>
-            <p>....</p>
+            <h3 class="modal-title">Залиште свої данні, ми вам передзвонимо</h3>
+            <ul action="modal-list">
+            <li class="modal-item">
+                <p class="modal-data">Ім'я</p>
+                <div class="input-wrap">
+                <input type="text" class="modal-input" id="text" name="name">
+            <a href="#" class="modal-link">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#human"></use>
+                </svg>
+            </a>
         </div>
+            </li>
+            <li class="modal-item">
+                <p class="modal-data">Телефон</p>
+                <div class="input-wrap">
+                <input type="text" class="modal-input" id="text" name="tell">
+            <a href="#" class="modal-link">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#contacts"></use>
+                </svg>
+            </a>
+            </div>
+            </li>
+            <li class="modal-item">
+                <p class="modal-data">Пошта</p>
+                <div class="input-wrap">
+                <input type="text" class="modal-input" id="text" name="email">
+            <a href="#" class="modal-link">
+                <svg width="20" height="20">
+                    <use href="./images/symboldefs.svg#envelope"></use>
+                </svg>
+            </a>
+            </div>
+            </li>
+            <li class="modal-item">
+                <p class="modal-data">Коментар</p>
+                <input type="text" class="modal-input modal-comment" id="text" name="comment" placeholder="Введіть текст">
+            </a>
+            </li>
+            </ul>
+        </div>
+        <div class="modal-true">
+            <input type="checkbox" class="modal-check">
+        </div>
+        <button type="submit" class="modal-btn_submit">Відправити</button>
     </div>
     <script src="./js/modal.js"></script>
 </body>
