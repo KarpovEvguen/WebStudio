@@ -426,14 +426,14 @@ letter-spacing: 0.48px;
     gap: 30px;
 }
 .company-list_item{
-    width: 170px;
+    /* width: 170px; */
     flex-basis: calc((100% - 150px) / 6);
 }
 .company-list_link{
     display: flex;
-    display: block;
+    /* display: block; */
     height: 92px;
-    padding: 20px 63px;
+    padding: 15px 31px;
     justify-content: center;
     align-items: center;
     fill: #afb1b8;
@@ -445,7 +445,14 @@ letter-spacing: 0.48px;
     border-color: var(--web-studio-blue);
     fill: var(--web-studio-blue);
 }
-
+/* .company-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #e1e1e1;
+} */
 
 .footer{ 
     padding: 60px 0;
