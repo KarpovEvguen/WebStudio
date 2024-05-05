@@ -329,13 +329,12 @@ margin: 10px 0 0;
     display: block;
     text-align: center;
     width: 370px;
-    height: 70px;
-    padding-top: 27px;
     position: relative;
-    bottom: 73px;
     opacity: 80%;
     color: var(--web-studio-white);
     background-color: #2f303a;
+    z-index: 1;
+    top: -20px;
 }
 .work_title{ 
     display: flex;
@@ -410,9 +409,10 @@ letter-spacing: 0.48px;
     background-color: var(--web-studio-blue);
     fill: #fff;
 }
-
+.company{
+    padding: 85px 0;
+}
 .company_title{
-    margin-top: 85px;
     font-size: 36px;
     font-weight: 700;
     letter-spacing: 1.08px;
@@ -428,6 +428,7 @@ letter-spacing: 0.48px;
 .company-list_item{
     /* width: 170px; */
     flex-basis: calc((100% - 150px) / 6);
+    margin-bottom: 101px;
 }
 .company-list_link{
     display: flex;
@@ -438,7 +439,6 @@ letter-spacing: 0.48px;
     align-items: center;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
-    margin-bottom: 101px;
     border-radius: 4px;
 }
 .company-list_link:hover{
@@ -458,8 +458,9 @@ letter-spacing: 0.48px;
     padding: 60px 0;
     background-color: var(--web-studio-black); 
 } 
-.footer-content_item{
-    margin-right: 70px;
+.footer-content-item{
+    display: flex;
+    gap: 94px;
 }
 .footer-logo{
     display: block;
@@ -501,6 +502,7 @@ flex-direction: column;
     align-items: center;
 }
 .footer-social-title{
+    margin-right: 50px;
     margin-bottom: 20px;
     font-weight: 700;
     letter-spacing: 0.03em;
