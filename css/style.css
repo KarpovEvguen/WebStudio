@@ -429,7 +429,6 @@ margin-bottom: 15px;
 .company-list_item{
     /* width: 170px; */
     flex-basis: calc((100% - 150px) / 6);
-    margin-bottom: 101px;
 }
 .company-list_link{
     display: flex;
@@ -578,8 +577,8 @@ flex-direction: column;
  
 
 
-.main {
-    padding: 94px 15px;
+.section-filters{
+    padding: 94px 0;
 }
 .filters{
     display: flex;
