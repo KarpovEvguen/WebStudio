@@ -331,16 +331,14 @@
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <form class="modal-btn_close" data-modal-close>
-            <a href="#" class="modal-close_link">
+        <form class="modal">
+            <button class="modal-close_btn" data-modal-close>
                 <svg width="11" height="11">
                     <use href="./images/symboldefs.svg#close"></use>
                 </svg>
-            </a>
-        </form>
-        <div class="modal">
+            </button>
             <h3 class="modal-title">Залиште свої данні, ми вам передзвонимо</h3>
-            <ul action="modal-list">
+            <ul class="modal-list">
             <li class="modal-item">
                 <p class="modal-data">Ім'я</p>
                 <div class="input-wrap">
@@ -380,11 +378,13 @@
             </a>
             </li>
             </ul>
-        </div>
         <div class="modal-true">
-            <input type="checkbox" class="modal-check">
+            <input type="checkbox" class="modal-check">Погоджуюся з
+            россилкою та приймаю
+            <a href="#" class="modal-"></a>
         </div>
         <button type="submit" class="modal-btn_submit">Відправити</button>
+    </form>
     </div>
     <script src="./js/modal.js"></script>
 </body>
