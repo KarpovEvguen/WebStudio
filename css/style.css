@@ -130,7 +130,7 @@ fill:#757575
     left: 50%;
     width: 530px;
     height: 581px;
-    padding: 15px;
+    padding: 40px;
     border-radius: 6px;
     background-color: var(--web-studio-white);
     transform: translate(-50%, -50%);
@@ -140,6 +140,7 @@ fill:#757575
     background-color: var(--web-studio-white);
     width: 20px;
     height: 20px;
+    padding: 8px 8px 0 0;
     border-radius: 50px;
     border: 1px solid #1e1e1e10;
     position: relative;
@@ -193,7 +194,7 @@ fill:#757575
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-comment{
-    margin: 8px 0 25px;
+    margin: 8px 0 20px;
     padding: 20px 10px 120px;
     height: 120px;
 }
@@ -219,6 +220,10 @@ fill:#757575
     height: 15px;
     border: 2px solid #212121;
     margin-right: 5px;
+}
+.modal-btn_link{
+    color: var(--web-studio-blue);
+    text-decoration: underline;
 }
 .modal-btn_submit{
     border-radius: 4px;
@@ -554,6 +559,11 @@ flex-direction: column;
     text-align: center;
     border-radius: 4px;
 }
+.media-send{
+    fill: var(--web-studio-white);
+    margin-left: 16px;
+}
+
 /* portfolio */
 
 
