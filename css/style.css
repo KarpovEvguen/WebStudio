@@ -626,14 +626,6 @@ padding: 6px 22px;
     background-color: var(--web-studio-white);
     padding: 21px 0 0;
 }
-/* .name-list{
-    position: relative;
-    z-index: 2;
-    background-color: #ffff;
-    width: 370px;
-    height: 108px;
-    padding: 21px 0 0 0;
-} */
 .projects-title{
     color: var(--web-studio-black);
 font-size: 18px;
