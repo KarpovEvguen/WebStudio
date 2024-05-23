@@ -547,6 +547,7 @@ flex-direction: column;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 .media-btn{
+    display: inline-flex;
     color: var(--web-studio-white);
     background-color: var(--web-studio-blue);
     width: 200px;
@@ -559,7 +560,6 @@ flex-direction: column;
     border-radius: 4px;
 }
 .media-send{
-    display: inline-flex;
     fill: var(--web-studio-white);
     margin-left: 16px;
 }
