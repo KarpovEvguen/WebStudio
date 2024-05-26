@@ -330,63 +330,41 @@
                         <use href="./images/symboldefs.svg#icon-send"></use>
                     </svg>
                     Підписатися</button>
-                <!-- <a href="#" class="media-send">
-                    <svg width="24" height="24">
-                        <use href="./images/symboldefs.svg#icon-send"></use>
-                    </svg>
-                </a> -->
             </form>
         </div>
     </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
+        <button class="modal-close_btn" data-modal-close>
+            <svg width="11" height="11">
+                <use href="./images/symboldefs.svg#close"></use>
+            </svg>
+        </button>
         <form class="modal">
-            <button class="modal-close_btn" data-modal-close>
-                <svg width="11" height="11">
-                    <use href="./images/symboldefs.svg#close"></use>
-                </svg>
-            </button>
             <h3 class="modal-title">Залиште свої данні, ми вам передзвонимо</h3>
-            <ul class="modal-list">
-            <li class="modal-item">
-                <p class="modal-data">Ім'я</p>
                 <div class="input-wrap">
-                <input type="text" class="modal-input" id="text" name="name">
-            <a href="#" class="modal-link">
-                <svg width="12" height="12">
+                    <label for="name" class="modal-data">Ім'я</label>
+                <input type="text" class="modal-input" id="name" name="name" required>
+                <svg class="modal-link" width="12" height="12">
                     <use href="./images/symboldefs.svg#human"></use>
                 </svg>
-            </a>
         </div>
-            </li>
-            <li class="modal-item">
-                <p class="modal-data">Телефон</p>
                 <div class="input-wrap">
-                <input type="text" class="modal-input" id="text" name="tell">
-            <a href="#" class="modal-link">
-                <svg width="13" height="13">
+                    <label for="tell" class="modal-data">Телефон</label>
+                <input type="text" class="modal-input" id="tell" name="tell" required>
+                <svg class="modal-link" width="13" height="13">
                     <use href="./images/symboldefs.svg#contacts"></use>
                 </svg>
-            </a>
             </div>
-            </li>
-            <li class="modal-item">
-                <p class="modal-data">Пошта</p>
                 <div class="input-wrap">
-                <input type="text" class="modal-input" id="text" name="email">
-            <a href="#" class="modal-link">
-                <svg width="15" height="12">
+                    <label for="email" class="modal-data">Пошта</label>
+                <input type="text" class="modal-input" id="email" name="email" required>
+                <svg class="modal-link" width="15" height="12">
                     <use href="./images/symboldefs.svg#vector"></use>
                 </svg>
-            </a>
             </div>
-            </li>
-            <li class="modal-item">
-                <p class="modal-data">Коментар</p>
-                <input type="text" class="modal-input modal-comment" id="text" name="comment" placeholder="Введіть текст">
-            </a>
-            </li>
-            </ul>
+                <label class="modal-data">Коментар</label>
+                <textarea class="modal-input modal-comment" name="comment" id="text" cols="30" rows="10" placeholder="Введіть текст"></textarea>
         <div class="modal-true">
             <input type="checkbox" class="modal-check">Погоджуюся з
             россилкою та приймаю
